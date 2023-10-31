@@ -1,25 +1,72 @@
-/* Estilos para a navegação */
-body{
-    background-color: goldenrod;
+/* Estilos geral para a navegação */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.navbar {
+
+body{
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* ESTILO PARA CABEÇALHO*/
+
+header{
+    padding: 20px 3%;
     background-color: black;
-    color: white;
+}
+
+header > .interface{
+
     display: flex;
-    
-    margin: 0px;
-    padding: 0px;
-  }
- 
-  .navbar a {
-    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > .menu{
     display: flex;
-    margin: 0px;
-    padding: 0px;
-    width: 100vw;
-  }
-  
-  /* Estilos para os cabeçalhos */
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(141, 133, 133);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: rgb(252, 249, 249);
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 30px;
+}
+
+/* Estilos para os botões */
+.btn-saibamais button {
+  padding: 10px;
+  background-color: rgb(136, 136, 230);
+  font-size: 18px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+  /* Estilos para os cabeçalhos*/
+
   h1, h2, h3 {
     font-family: 'Arial', sans-serif;
   }
@@ -32,28 +79,17 @@ body{
   
   /* Estilos para as imagens */
   img {
-    max-width: 20%;
+    max-width: 40%;
     border-radius: 50%;
     height: auto;
   }
   
-  /* Estilos para os botões */
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-  }
   
-  .btn-primary {
-    background-color: orangered;
-  }
   
+ 
   /* Estilos para as seções */
   .max-width {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 20px;
   }
@@ -63,4 +99,5 @@ body{
   }
   
   /* Outros estilos específicos conforme necessário */
+  
   
